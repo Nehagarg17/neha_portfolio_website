@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>This is my Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles/design.css">
+</head>
+
+<body>
+  <header id="headSection">
+  </header>
+  <main>
+    <script>
+      function downloadFile() {
+        window.open("./assets/files/Neha_resume.pdf")
+      }
+      function visitlinkedin() {
+        window.open("https://www.linkedin.com/in/neha-garg-9a930627a/")
+      }
+    </script>
+    <section class="firstsection">
+      <div class="leftsection">Hi, My Name is <span class="purple">Neha</span>
+        <div>I am a passionate </div>
+        <!-- Element to contain animated typing -->
+        <span id="element"></span>
+        <div class="buttons">
+          <button onclick="downloadFile()" class="btn"> Download Resume </button>
+          <button onclick="visitlinkedin()" class="btn"> Visit Linkedin Profile</button>
+        </div>
+      </div>
+      <div class="rightsection"><img src="./assets/images/52.png">
+      </div>
+    </section>
+    <hr />
+    <section class="secondsection">
+      <span class="text-gray">What I have done so far</span>
+      <h1>Work Experience</h1>
+      <div class="box">
+        <div class="vertical">
+          <img class="img-top" src="./assets/images/developer.png"></img>
+          <div class="vertical-title">TezLaxmi Software Solutions, Gwalior (Feb 2020-Dec 2022)
+            <div class="verticl-title">
+              Software Engineer-1
+            </div>
+          </div>
+          <div class="vertical-desc">
+            Online Education Admin Portal An admin portal for customizing features on client app and a single
+            dashboard to see charts about different stats on app.
+            Designed and developed new features, fixed existing issues, analyzed and discussed scope of improvement.
+            Carried out quality assurance tests to discover errors and optimized usability.
+            Tech stack used: React (Hooks), Webpack, ES6, CSS3, SCSS, Material UI, JavaScript, HTML, HighCharts etc.
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="img-top" src="./assets/images/developer.png"></img>
+          <div class="vertical-title">ITM University, Gwalior (Jan 2017-Feb 2020)
+            <div class="verticl--title">
+              Assistant Professor
+            </div>
+          </div>
+          <div class="vertical-desc">
+            A New Text Mining Method Based on Multi Objective Genetic and K-Means Clustering Algorithm (M.Tech
+            Dissertation Title)
+            In Today’s world, the amount of stored data has been enormously increasing day by day which is generally in
+            the unstructured form and cannot be used for any processing to extract the useful information.
+            Clustering is one of the Text Mining technique for organizing such massive amount of data into a set of
+            disjoint classes called clusters.
+            It will uses the noble and heuristic techniques as an improvement over the existing method for enhancing the
+            performance of document clustering algorithm.
+          </div>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <!-- <div class="footer">
+      <div class="footer-first">
+        <h3>Neha's Developer Portfolio</h3>
+        </h1>
+      </div>
+      <div class="footer-second">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="ContactMe.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+    </div> -->
+    <div class="footer-rights">
+      Copyright &#169; Neha portfolio ! All rights reserved
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Frontend Developer', 'React Developer'],
+      typeSpeed: 50,
+    });
+    $(function () {
+      $("#headSection").load("./header.html");
+    });
+  </script>
+
+</body>
+
+</html>

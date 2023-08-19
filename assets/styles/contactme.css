@@ -1,0 +1,18 @@
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title-section {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.content {
+  padding: 50px 50px;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+}
