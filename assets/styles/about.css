@@ -29,3 +29,7 @@ body {
 .row div{
   margin: 7.5px 0;
 }
+
+ul li {
+  list-style-type: none;
+}
